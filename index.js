@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 });
 
 // POST route
-app.post("/", async (req, res) => {
+app.post("/api/chat", async (req, res) => {
   const { message } = req.body;
   const key = process.env.GEMINI_API_KEY;
 
